@@ -1,0 +1,42 @@
+{
+  "name": "datamincer/bundles-foobar",
+  "description": "DataMincer: Bundles FooBar",
+  "type": "project",
+  "authors": [
+    {
+      "name": "",
+      "role": ""
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://datamincer.bitbucket.io"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "datamincer/core": "dev-master",
+    "datamincer/launcher": "dev-master",
+    "datamincer/plugins": "dev-master",
+    "oomphinc/composer-installers-extender": "dev-master"
+  },
+  "scripts": {
+    "dm": "vendor/bin/dm",
+    "dm-info": "vendor/bin/dm bundle info",
+    "dm-gen": "vendor/bin/dm unit generate"
+  },
+  "minimum-stability": "dev",
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "installer-types": ["datamincer-bundle"],
+    "installer-paths": {
+      "bundles/{$name}": ["type:datamincer-bundle"]
+    },
+    "data-mincer-options": {
+      "bundlesPath": "bundles"
+    }
+  }
+}
