@@ -5,9 +5,9 @@ dependencies with [Composer](https://getcomposer.org/).
 
 This repository contains the base set of packages pre-installed:
 
-* [datamincer/core](https://bitbucket.org/datamincer/core/src/master/)
-* [datamincer/plugins](https://bitbucket.org/datamincer/plugins/src/master/)
-* [datamincer/launcher](https://bitbucket.org/datamincer/launcher/src/master/)
+* [datamincer/core](https://github.com/DataMincer/core/src/master/)
+* [datamincer/plugins](https://github.com/DataMincer/plugins/src/master/)
+* [datamincer/launcher](https://github.com/DataMincer/launcher/src/master/)
 
 ## Usage
 
@@ -20,7 +20,7 @@ for your setup.
 After that you can create the project:
 
 ```
-$ composer create-project datamincer/project-bundle-set bundles-foobar --no-interaction --repository https://datamincer.bitbucket.io --stability dev
+$ composer create-project datamincer/project-bundle-set bundles-foobar --no-interaction --repository https://datamincer.github.io --stability dev
 $ cd some-dir
 ```
 
@@ -34,7 +34,7 @@ $ composer require datamincer/crowdanki
 The same way you can install others bundles in `bundles` subdirectory:
 
 ```
-$ composer require datamincer/bundle-anki-css3colors --repository https://datamincer.bitbucket.io
+$ composer require datamincer/bundle-anki-css3colors --repository https://datamincer.github.io
 ```
 
 ## What does the template do?
