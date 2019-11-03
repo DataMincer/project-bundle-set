@@ -1,6 +1,6 @@
 {
-  "name": "datamincer/bundles-foobar",
-  "description": "DataMincer: Bundles FooBar",
+  "name": "datamincer/project-bundle-set",
+  "description": "DataMincer: Bundle Set Template",
   "type": "project",
   "authors": [
     {
