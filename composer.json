@@ -1,6 +1,6 @@
 {
   "name": "datamincer/project-bundle-set",
-  "description": "DataMincer: Bundle Set Template",
+  "description": "DataMincer: Bundle Set Project Template",
   "type": "project",
   "authors": [
     {
@@ -11,24 +11,20 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://datamincer.bitbucket.io"
+      "url": "https://datamincer.github.io"
     }
   ],
+  "prefer-stable": true,
+  "minimum-stability": "dev",
   "require": {
-    "php": ">=7.2",
-    "datamincer/core": "dev-master",
-    "datamincer/launcher": "dev-master",
-    "datamincer/plugins": "dev-master",
-    "oomphinc/composer-installers-extender": "dev-master"
+    "datamincer/launcher": "*",
+    "datamincer/plugins": "*",
+    "oomphinc/composer-installers-extender": "^1.1.2"
   },
   "scripts": {
     "dm": "vendor/bin/dm",
     "dm-info": "vendor/bin/dm bundle info",
     "dm-gen": "vendor/bin/dm unit generate"
-  },
-  "minimum-stability": "dev",
-  "config": {
-    "sort-packages": true
   },
   "extra": {
     "installer-types": ["datamincer-bundle"],
